@@ -240,6 +240,32 @@ class _MyAppState extends State<MyApp> {
 
                     ],
                   ),
+                ),
+                SizedBox(height: 15,),
+                Card(
+                  child: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Container(
+
+                            color: Colors.grey,
+                            child: Icon(
+                              CupertinoIcons.settings,
+                            ),
+                          ),
+                          SizedBox(width: 18,),
+                          Text("General", style: TextStyle(fontWeight: FontWeight.bold),),
+                          Spacer(),
+                          IconButton(onPressed: (){}, icon: Icon(
+                            CupertinoIcons.chevron_forward,
+                            color: Colors.grey,
+                          ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 )
               ],
             ),
