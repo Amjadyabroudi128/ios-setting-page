@@ -25,6 +25,7 @@ class _MyAppState extends State<MyApp> {
       ),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
+
         body: Center(
           child: SingleChildScrollView(
             child: Column(
@@ -70,7 +71,6 @@ class _MyAppState extends State<MyApp> {
                       Row(
                         children: [
                           Container(
-
                             color: Colors.orange,
                             child: Icon(
                               CupertinoIcons.airplane,
@@ -257,16 +257,52 @@ class _MyAppState extends State<MyApp> {
                           SizedBox(width: 18,),
                           Text("General", style: TextStyle(fontWeight: FontWeight.bold),),
                           Spacer(),
-                          IconButton(onPressed: (){}, icon: Icon(
+                          Icon(
                             CupertinoIcons.chevron_forward,
                             color: Colors.grey,
                           ),
+                        ],
+                      ),
+                      Divider(color: Colors.grey, thickness: 1, ),
+                      Row(
+                        children: [
+                          Container(
+
+                            color: Colors.grey,
+                            child: Icon(
+                              CupertinoIcons.equal,
+                            ),
+                          ),
+                          SizedBox(width: 18,),
+                          Text("Control Centre", style: TextStyle(fontWeight: FontWeight.bold),),
+                          Spacer(),
+                          Icon(
+                            CupertinoIcons.chevron_forward,
+                            color: Colors.grey,
+                          ),
+                        ],
+                      ),
+                      Divider(color: Colors.grey, thickness: 1, ),
+                      Row(
+                        children: [
+                          Container(
+                            color: Colors.indigoAccent,
+                            child: Icon(
+                              CupertinoIcons.textformat_size,
+                            ),
+                          ),
+                          SizedBox(width: 18,),
+                          Text("Display and Brightness", style: TextStyle(fontWeight: FontWeight.bold),),
+                          Spacer(),
+                          Icon(
+                            CupertinoIcons.chevron_forward,
+                            color: Colors.grey,
                           ),
                         ],
                       ),
                     ],
                   ),
-                )
+                ),
               ],
             ),
           ),
